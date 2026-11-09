@@ -1,0 +1,26 @@
+[Unit]
+Description=Read-only UAV MAVLink telemetry exchange
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=uav
+Group=uav
+SupplementaryGroups=dialout
+AmbientCapabilities=CAP_NET_RAW
+CapabilityBoundingSet=CAP_NET_RAW
+NoNewPrivileges=true
+WorkingDirectory=/opt/uav-telemetry
+ExecStart=/opt/uav-telemetry/venv/bin/python -u -m tools.uav_telemetry run
+Restart=on-failure
+RestartSec=3
+RuntimeDirectory=uav-telemetry
+RuntimeDirectoryMode=0750
+UMask=0027
+TimeoutStopSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

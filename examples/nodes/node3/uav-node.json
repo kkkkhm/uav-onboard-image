@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "node_id": 3,
+  "serial_device": "/dev/serial0",
+  "baud": 115200,
+  "peers": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

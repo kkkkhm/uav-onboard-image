@@ -1,0 +1,14 @@
+[Unit]
+Description=Initialize identity of a cloned UAV Raspberry Pi
+After=local-fs.target
+Before=NetworkManager.service ssh.service sshd.service avahi-daemon.service uav-mesh.service uav-telemetry.service
+ConditionPathExists=/var/lib/uav-image/needs-setup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/uav-image/firstboot.py --boot
+RemainAfterExit=yes
+TimeoutStartSec=120
+
+[Install]
+WantedBy=multi-user.target
