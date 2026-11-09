@@ -1,0 +1,9 @@
+{
+  "uav_config": 10,
+  "uav_telemetry": 11,
+  "node_initialization": 3,
+  "public_access": 3,
+  "total": 27,
+  "passed": true,
+  "physical_boot_tested": false
+}

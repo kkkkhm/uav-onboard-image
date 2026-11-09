@@ -1,0 +1,18 @@
+{
+  "upstream": {
+    "url": "https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2026-10-06/2026-10-06-raspios-trixie-arm64-lite.img.xz",
+    "sha256": "483db18a48da399b5b7022ffae9a07bc6d99daab30e593aedac09b69ff422843",
+    "bytes": 550466056
+  },
+  "software_paths_allowlisted": true,
+  "private_account_databases_copied": false,
+  "private_wifi_profiles_copied": false,
+  "private_logs_or_documents_copied": false,
+  "login_initially_locked": true,
+  "arm_runtime_imports_verified": true,
+  "physical_boot_tested": false,
+  "image_bytes": 9135194112,
+  "compressed_bytes": 967710012,
+  "sha256": "21672ed5b4acf3232ddb9e6dd63744602f7dd6ab1ffee061197e3e7aa385653a",
+  "compressed_sha256": "2fb024fdef0c8aa98de76d87a2c0741913eb96bd8671958188309676024073d6"
+}

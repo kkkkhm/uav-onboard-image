@@ -1,0 +1,13 @@
+{
+  "all_accounts_initially_locked": true,
+  "uid1000": "uav",
+  "wifi_profiles": 0,
+  "ssh_host_keys": 0,
+  "machine_id_empty": true,
+  "private_home_files_copied": false,
+  "software_matches_source": true,
+  "arm_onboarding_tested": true,
+  "whole_boot_transaction_verified": true,
+  "credential_template_empty": true,
+  "physical_boot_tested": false
+}
